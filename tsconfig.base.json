@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@lipsquirrel/mug": ["libs/mug/src/index.ts"]
+      "@lipsquirrel/mug": ["libs/mug/src/index.ts"],
+      "@lipsquirrel/react-mug": ["libs/react-mug/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

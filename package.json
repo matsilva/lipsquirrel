@@ -4,7 +4,6 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@nx/eslint": "19.7.4",
     "@nx/eslint-plugin": "19.7.4",
@@ -15,7 +14,9 @@
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@testing-library/react": "^16.0.1",
     "@types/node": "18.16.9",
+    "@types/react": "^18.3.8",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "@typescript-eslint/parser": "^7.16.0",
     "@vitest/coverage-v8": "^1.0.4",
@@ -33,5 +34,8 @@
   },
   "nx": {
     "includedScripts": []
+  },
+  "dependencies": {
+    "react": "^18.3.1"
   }
 }

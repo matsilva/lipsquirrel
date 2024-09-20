@@ -20,6 +20,9 @@ describe('useMug hook', () => {
   });
 
   it('should initialize with the provided initial value when no state exists', () => {
+    // Create Mug without setting an initial state for 'count'
+    mug = new Mug<TestState>({ user: { name: 'John', loggedIn: false } });
+
     const { result } = renderHook(() => useMug(mug, 'count', 10));
 
     // Verify that the initial state is set to the initialValue (10)
@@ -41,7 +44,7 @@ describe('useMug hook', () => {
 
     // Act to update the state
     act(() => {
-      result.current; // Update state to 30 using the setter function
+      result.current[1](30); // Call the setter function to update state to 30
     });
 
     // Verify that both local and global state are updated
